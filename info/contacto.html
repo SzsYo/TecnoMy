@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | TecnoMy</title>
+  <link rel="stylesheet" href="../inicio/styles.css" />
+  <link rel="stylesheet" href="./contacto.css" />
+</head>
+
+<body>
+  <header class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="eyebrow">Estamos para ti</p>
+      <h1>Ponte en contacto con TecnoMy</h1>
+      <p class="hero__text">
+        ¿Preguntas sobre nuestros productos o servicios? Nos encantaría escucharte y ayudarte con tus necesidades tecnológicas.
+      </p>
+    </div>
+  </header>
+
+  <nav class="scroll-nav" id="scrollNav" aria-label="Navegación principal">
+    <div class="container scroll-nav__content">
+      <a href="/inicio/index.html" class="scroll-nav__logo">
+        <img src="/img/logoN.png" alt="Logo TecnoMy" />
+      </a>
+      <div class="scroll-nav__links">
+        <a href="/inicio/index.html">Inicio</a>
+        <a href="/info/contacto.html">Contacto</a>
+        <a href="/info/servicios.html">Servicio</a>
+        <a href="/info/sobre nosotros.html">Sobre nosotros</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="contact-section container" id="contacto">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Información de contacto</h2>
+          <p>Encuentra todos los canales disponibles para comunicarte con nosotros. Responderemos lo antes posible.</p>
+          
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Teléfono</h3>
+              <p>+57 300 2282993</p>
+              <span class="info-label">Llamadas y WhatsApp</span>
+            </div>
+            <div class="info-card">
+              <h3>Email</h3>
+              <p>info@tecnomy.com</p>
+              <span class="info-label">Correo electrónico</span>
+            </div>
+            <div class="info-card">
+              <h3>Horario de atención</h3>
+              <p>Lunes a sábado</p>
+              <span class="info-label">8:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="contact-benefits">
+            <h3>¿Por qué contactarnos?</h3>
+            <ul>
+              <li>Asesoría técnica sin costo</li>
+              <li>Recomendaciones personalizadas</li>
+              <li>Respuesta rápida a tus consultas</li>
+              <li>Soporte para compras y servicios</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h2>Envíanos un mensaje</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" placeholder="+57 300 XXXXXXX">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <select id="subject" name="subject" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="consulta">Consulta general</option>
+                <option value="compra">Interés en producto</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="presupuesto">Solicitar presupuesto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__box">
+        <h2>¿Urgencia en tu solicitud?</h2>
+        <p>Llámanos directamente al +57 300 2282993 para una atención inmediata.</p>
+        <a href="tel:+573002282993" class="btn btn--primary">Llamar ahora</a>
+      </div>
+    </section>
+
+    <section class="faq container" id="preguntas">
+      <header class="section__header">
+        <h2>Preguntas frecuentes</h2>
+        <p>Encuentra respuestas a las dudas más comunes</p>
+      </header>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>¿Cuál es el tiempo de respuesta?</h3>
+          <p>Respondemos tus mensajes dentro de 24 horas hábiles. Para consultas urgentes, llama directamente.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Ofrecen asesoría sin costo?</h3>
+          <p>Sí, realizamos consultas técnicas y recomendaciones de equipos de forma gratuita.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Hacen envíos a domicilio?</h3>
+          <p>Sí, contamos con servicio de envío para equipos y accesorios en la región.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué formas de pago aceptan?</h3>
+          <p>Aceptamos efectivo, transferencia bancaria, tarjeta de crédito y débito.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Puedo agendar una cita?</h3>
+          <p>Claro, puedes agendar llamando o dejando tu solicitud en el formulario.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Tienen servicio técnico a domicilio?</h3>
+          <p>Sí, realizamos reparaciones y configuraciones en tu lugar sin costo adicional de desplazamiento.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© 2026 TecnoMy. Brandon Garcia Morales.</p>
+    </div>
+  </footer>
+
+  <script src="../inicio/script.js"></script>
+</body>
+
+</html>

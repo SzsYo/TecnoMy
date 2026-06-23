@@ -19,6 +19,12 @@
   background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
+
 .hero__overlay {
   background: radial-gradient(circle at top right, rgba(138, 43, 226, 0.25), transparent 40%);
 }
@@ -30,7 +36,7 @@
 }
 
 .about h2 {
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   margin-bottom: 1.5rem;
   background: linear-gradient(135deg, var(--text), var(--accent));
   -webkit-background-clip: text;
@@ -40,6 +46,11 @@
 
 .about__text {
   animation: slideInUp 0.8s ease-out;
+}
+
+.about__text p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.7;
 }
 
 .about__image {
@@ -121,6 +132,7 @@
   position: relative;
   overflow: hidden;
   animation: scaleIn 0.8s ease-out;
+  padding: clamp(1.5rem, 4vw, 3rem);
 }
 
 .cta__box::before {
@@ -142,8 +154,12 @@
 }
 
 .cta__box h2 {
-  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
   margin-bottom: 1rem;
+}
+
+.cta__box p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 /* Sección de Contacto */
@@ -157,12 +173,17 @@
 }
 
 .contact > div:first-child h2 {
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   margin-bottom: 1rem;
   background: linear-gradient(135deg, var(--text), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.contact > div:first-child p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: var(--text-muted);
 }
 
 .card {
@@ -198,6 +219,8 @@
 }
 
 .card p {
+  color: var(--text-muted);
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
   color: var(--text-muted);
   line-height: 1.8;
 }
